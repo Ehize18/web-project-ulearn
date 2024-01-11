@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/style/style.css' %}">
+</head>
+<body>
+    <section class="static">
+        <header class="main-header">
+            <img class="logo" src="{% static 'main/img/logo.png' %}">
+        </header>
+        <nav class="main-nav">
+            <ul>
+                <li class="main-nav-item">
+                    <a href="/">
+                        <img class="nav-pic" src="{% static 'main/img/placeholder.png' %}">
+                        <p>Главная</p>
+                    </a>
+                </li>
+                <li class="main-nav-item">
+                    <a href="/relevance">
+                        <img class="nav-pic" src="{% static 'main/img/placeholder.png' %}">
+                        <p>Востребованность</p>
+                    </a>
+                </li>
+                <li class="main-nav-item">
+                    <a>
+                        <img class="nav-pic" src="{% static 'main/img/placeholder.png' %}">
+                        <p>География</p>
+                    </a>
+                </li>
+                <li class="main-nav-item">
+                    <a>
+                        <img class="nav-pic" src="{% static 'main/img/placeholder.png' %}">
+                        <p>Навыки</p>
+                    </a>
+                </li>
+                <li class="main-nav-item">
+                    <a>
+                        <img class="nav-pic" src="{% static 'main/img/placeholder.png' %}">
+                        <p>Последние вакансии</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <footer class="main-footer">
+            <p>РИ-220912</p>
+            <p>Фадеев Артём Игоревич</p>
+        </footer>
+    </section>
+    <section class="dynamic">
+        {% block content %}
+        {% endblock %}
+    </section>
+</body>
+</html>
