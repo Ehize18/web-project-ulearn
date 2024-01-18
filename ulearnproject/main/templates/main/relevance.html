@@ -1,8 +1,52 @@
 {% extends 'main/layout.html' %}
-
+{% load static %}
 {% block title %}Востребованность{% endblock %}
 
 {% block content %}
 <h1>Востребованность</h1>
-<p>aa</p>
+<h2>Зарплата по годам</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Год</th>
+            <th>Зарплата по всем вакансиям</th>
+            <th>Зарплата по профессии</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for k, v in salary_table.items %}
+
+        <tr>
+            <td>{{k}}</td>
+            <td>{{v.0}}</td>
+            <td>{{v.1}}</td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+<img class="stat-img" src="{% static 'main/img/salary_by_year.png' %}">
+<h2>Количество вакансий по годам</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Год</th>
+            <th>Количество всех вакансий</th>
+            <th>Количество вакансий по профессии</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for k, v in count_table.items %}
+
+        <tr>
+            <td>{{k}}</td>
+            <td>{{v.0}}</td>
+            <td>{{v.1}}</td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+<img class="stat-img" src="{% static 'main/img/all_count.png' %}">
+<img class="stat-img" src="{% static 'main/img/prof_count.png' %}">
 {% endblock %}

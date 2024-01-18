@@ -16,6 +16,7 @@ body {
     background-color: #303030;
     height: 100vh;
     position: sticky;
+    top: 0px;
 }
 
 .main-header {
@@ -80,6 +81,37 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 p {
     word-wrap: normal;
+}
+
+table {
+    border-collapse: collapse;
+    order: 1px solid black;
+    margin-bottom: 20px;
+}
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+
+thead th:nth-child(2) {
+    width: 50%;
+}
+
+thead th:nth-child(3) {
+    width: 30%;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+.stat-img {
+    display: block;
+    margin: 0 auto;
 }

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .from_df import sby_dct, cby_dct
 
 
 def index(request):
@@ -6,4 +7,5 @@ def index(request):
 
 
 def relevance(request):
-    return render(request, "main/relevance.html")
+    context = {"salary_table": sby_dct, "count_table": cby_dct}
+    return render(request, "main/relevance.html", context=context)
