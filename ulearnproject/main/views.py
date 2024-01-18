@@ -9,3 +9,7 @@ def index(request):
 def relevance(request):
     context = {"salary_table": sby_dct, "count_table": cby_dct}
     return render(request, "main/relevance.html", context=context)
+
+
+def geography(request):
+    return render(request, "main/geography.html")

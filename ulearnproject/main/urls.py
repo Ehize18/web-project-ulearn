@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('relevance', views.relevance)
+    path('relevance', views.relevance),
+    path('geography', views.geography)
 ]
