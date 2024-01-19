@@ -2,6 +2,11 @@
 {% load static %}
 {% block title %}География{% endblock %}
 
+{% block a_main %}href="/"{% endblock %}
+{% block a_relevance %}href="/relevance"{% endblock %}
+{% block a_geography %}class="active"{% endblock %}
+{% block a_last_vacancies %}href="/last_vacancies"{% endblock %}
+
 {% block content %}
 <h1>География</h1>
 <img class="stat-img" src="{% static 'main/img/geo_all_count.png' %}" width="1000px">

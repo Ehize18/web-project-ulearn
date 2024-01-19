@@ -39,8 +39,7 @@ ul {
 }
 
 .main-nav-item {
-    background-color: #494949;
-    border-radius: 24px;
+
     margin-bottom: 10px;
 }
 
@@ -114,4 +113,13 @@ td, th {
 .stat-img {
     display: block;
     margin: 0 auto;
+}
+
+a {
+    background-color: #494949;
+    border-radius: 24px;
+}
+
+a.active {
+    background-color: #707070
 }

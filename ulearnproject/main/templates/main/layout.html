@@ -17,19 +17,19 @@
         <nav class="main-nav">
             <ul>
                 <li class="main-nav-item">
-                    <a href="/">
+                    <a {% block a_main %}{% endblock %}>
                         <img class="nav-pic" src="{% static 'main/img/placeholder.png' %}">
                         <p>Главная</p>
                     </a>
                 </li>
                 <li class="main-nav-item">
-                    <a href="/relevance">
+                    <a {% block a_relevance %}{% endblock %}>
                         <img class="nav-pic" src="{% static 'main/img/placeholder.png' %}">
                         <p>Востребованность</p>
                     </a>
                 </li>
                 <li class="main-nav-item">
-                    <a href="/geography">
+                    <a {% block a_geography %}{% endblock %}>
                         <img class="nav-pic" src="{% static 'main/img/placeholder.png' %}">
                         <p>География</p>
                     </a>
@@ -41,7 +41,7 @@
                     </a>
                 </li>
                 <li class="main-nav-item">
-                    <a>
+                    <a {% block a_last_vacancies %}{% endblock %}>
                         <img class="nav-pic" src="{% static 'main/img/placeholder.png' %}">
                         <p>Последние вакансии</p>
                     </a>
