@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .relevance import sby_dct, cby_dct
 from .skills import all_skills, fullstack_skills
-from .geography import geo_all_count, geo_fullstack_count
+from .geography import *
 
 
 def index(request):
@@ -14,7 +14,8 @@ def relevance(request):
 
 
 def geography(request):
-    context = {"geo_all_count": geo_all_count, "geo_fullstack_count": geo_fullstack_count}
+    context = {"geo_all_count": geo_all_count, "geo_fullstack_count": geo_fullstack_count,
+               "geo_all_salary": geo_all_salary, "geo_fullstack_salary": geo_fullstack_salary}
     return render(request, "main/geography.html", context=context)
 
 

@@ -10,6 +10,84 @@
 
 {% block content %}
 <h1>География</h1>
+<h2>Доля вакансий по городам</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Город</th>
+            <th>Доля в %</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for k, v in geo_all_count.items %}
+
+        <tr>
+            <td>{{k}}</td>
+            <td>{{v.count}}</td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
 <img class="stat-img" src="{% static 'main/img/geo_all_count.png' %}" width="1000px">
-<img class="stat-img" src="{% static 'main/img/geo_prof_count.png' %}" width="1000px">
+<h2>Доля вакансий Fullstack разработчика по городам</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Город</th>
+            <th>Доля в %</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for k, v in geo_fullstack_count.items %}
+
+        <tr>
+            <td>{{k}}</td>
+            <td>{{v.count}}</td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+<img class="stat-img" src="{% static 'main/img/geo_fullstack_count.png' %}" width="1000px">
+<h2>Уровень зарплат по городам по всем вакансиям</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Город</th>
+            <th>Зарплата</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for k, v in geo_all_salary.items %}
+
+        <tr>
+            <td>{{k}}</td>
+            <td>{{v.salary}}</td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+<img class="stat-img" src="{% static 'main/img/geo_all_salary.png' %}" width="1000px">
+<h2>Уровень зарплат по городам по вакансиям Fullstack разработчика</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Город</th>
+            <th>Зарплата</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for k, v in geo_fullstack_salary.items %}
+
+        <tr>
+            <td>{{k}}</td>
+            <td>{{v.salary}}</td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+<img class="stat-img" src="{% static 'main/img/geo_fullstack_salary.png' %}" width="1000px">
 {% endblock %}
