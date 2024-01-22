@@ -17,4 +17,4 @@ df3.columns = ["Все вакансии", "Full Stack"]
 df3.plot(kind="bar")
 plt.savefig("Full_by_year.png")
 
-df.to_csv("Full_by_year.csv")
+df3.to_csv("Full_by_year.csv")

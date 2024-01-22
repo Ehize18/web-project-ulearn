@@ -1,7 +1,7 @@
 import pandas as pd
 
-sby = pd.read_csv("static/main/data/salary_by_year", index_col=0)
-cby = pd.read_csv("static/main/data/count_by_year", index_col=0)
+sby = pd.read_csv("static/main/data/salary_by_year.csv", index_col=0)
+cby = pd.read_csv("static/main/data/count_by_year.csv", index_col=0)
 
 
 def get_context_dict(temp_dct):
