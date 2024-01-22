@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .from_df import sby_dct, cby_dct
+from .skills import all_skills, fullstack_skills
 
 
 def index(request):
@@ -13,3 +14,8 @@ def relevance(request):
 
 def geography(request):
     return render(request, "main/geography.html")
+
+
+def skills(request):
+    context = {"all_skills": all_skills, "fullstack_skills": fullstack_skills}
+    return render(request, "main/skills.html", context=context)

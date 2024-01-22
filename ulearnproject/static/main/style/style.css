@@ -89,20 +89,21 @@ p {
 }
 
 table {
+    width: 100%;
     border-collapse: collapse;
-    order: 1px solid black;
+    border: 1px solid black;
     margin-bottom: 20px;
 }
 
-thead th:nth-child(1) {
+table th:nth-child(1) {
     width: 20%;
 }
 
-thead th:nth-child(2) {
+table th:nth-child(2) {
     width: 50%;
 }
 
-thead th:nth-child(3) {
+table th:nth-child(3) {
     width: 30%;
 }
 

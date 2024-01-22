@@ -1,0 +1,57 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Навыки{% endblock %}
+
+{% block a_main %}href="/"{% endblock %}
+{% block a_relevance %}href="/relevance"{% endblock %}
+{% block a_geography %}href="/geography"{% endblock %}
+{% block a_skills %}class="active"{% endblock %}
+{% block a_last_vacancies %}href="/last_vacancies"{% endblock %}
+
+{% block content %}
+<h1>Навыки</h1>
+<h2>Топ 20 навыков по годам по всем вакансиям</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Год</th>
+            <th>Навык</th>
+            <th>Количество</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for k, v in all_skills.items %}
+
+        <tr>
+            <td>{{v.year}}</td>
+            <td>{{v.skill}}</td>
+            <td>{{v.count}}</td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+<img class="stat-img" src="{% static 'main/img/all_skills.png' %}" width="1000px">
+<h2>Топ 20 навыков по годам Fullstack разработчика</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Год</th>
+            <th>Навык</th>
+            <th>Количество</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for k, v in fullstack_skills.items %}
+
+        <tr>
+            <td>{{v.year}}</td>
+            <td>{{v.skill}}</td>
+            <td>{{v.count}}</td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+<img class="stat-img" src="{% static 'main/img/fullstack_skills.png' %}" width="1000px">
+{% endblock %}
