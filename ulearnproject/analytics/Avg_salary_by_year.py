@@ -1,12 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("ALL_Salary_in_Rubble.csv")
+df = pd.read_csv("ALL_Salary_in_Rubble_fixed.csv")
 df["published_at"] = pd.to_datetime(df["published_at"], utc=True)
-df2 = pd.read_csv("Salary_in_Rubble.csv")
+df2 = pd.read_csv("Salary_in_Rubble_fixed.csv")
 df2["published_at"] = pd.to_datetime(df2["published_at"], utc=True)
-print(df.columns)
-print(df2.columns)
 df["year"] = df["published_at"].dt.strftime("%Y")
 df2["year"] = df2["published_at"].dt.strftime("%Y")
 
