@@ -125,3 +125,8 @@ a {
 a.active {
     background-color: #707070
 }
+
+.nav-pic {
+    width: 32px;
+    height: 32px;
+}

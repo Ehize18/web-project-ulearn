@@ -186,3 +186,8 @@ a.active {
     margin-bottom: 20px;
     text-align: right;
 }
+
+.nav-pic {
+    width: 32px;
+    height: 32px;
+}

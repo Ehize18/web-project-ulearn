@@ -1,0 +1,21 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_24_86)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64 128C99.3462 128 128 99.3462 128 64C128 28.6538 99.3462 0 64 0C28.6538 0 0 28.6538 0 64C0 99.3462 28.6538 128 64 128ZM64 124C97.1371 124 124 97.1371 124 64C124 30.8629 97.1371 4 64 4C30.8629 4 4 30.8629 4 64C4 97.1371 30.8629 124 64 124Z" fill="white"/>
+<path d="M48 109L48 98.5C48 94.634 44.866 91.5 41 91.5L38 91.5C34.134 91.5 31 88.366 31 84.5L31 79.797C31 77.709 30.068 75.73 28.4582 74.4002L24.4726 71.1078C21.663 68.7868 21.1042 64.6983 23.188 61.7085L30.264 51.556C30.7506 50.8579 31.1058 50.0768 31.3122 49.2512L35.183 33.768C35.6993 31.7027 37.1275 29.9846 39.0637 29.0995L53.5 22.5" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M77.5749 108.814L77.5749 93.2292C77.5749 91.9753 77.9117 90.7444 78.5501 89.6652L89 72" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="78" cy="46" r="18" stroke="white" stroke-width="4"/>
+<rect x="54" y="42" width="8" height="8" rx="1" fill="white"/>
+<rect x="94" y="42" width="8" height="8" rx="1" fill="white"/>
+<rect x="74" y="70" width="8" height="8" rx="1" transform="rotate(-90 74 70)" fill="white"/>
+<rect x="74" y="30" width="8" height="8" rx="1" transform="rotate(-90 74 30)" fill="white"/>
+<rect x="92.1421" y="65.799" width="8" height="8" rx="1" transform="rotate(-135 92.1421 65.799)" fill="white"/>
+<rect x="63.8579" y="37.5147" width="8" height="8" rx="1" transform="rotate(-135 63.8579 37.5147)" fill="white"/>
+<rect x="58.201" y="60.1421" width="8" height="8" rx="1" transform="rotate(-45 58.201 60.1421)" fill="white"/>
+<rect x="86.4852" y="31.8579" width="8" height="8" rx="1" transform="rotate(-45 86.4852 31.8579)" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_24_86">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+</defs>
+</svg>
